@@ -137,33 +137,33 @@
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary selection:text-background">
 <a class="skip-link font-headline" href="#main">Skip to content</a>
-<!-- Global Scanline Overlay -->
-<div class="fixed inset-0 scanline z-[100] opacity-30 pointer-events-none" aria-hidden="true"></div>
+<!-- Global scanline sits below the fixed header so the bar stays crisp -->
+<div class="fixed inset-0 scanline z-30 opacity-30 pointer-events-none" aria-hidden="true"></div>
 <!-- TopNavBar -->
 <header class="fixed top-0 left-0 right-0 z-50 w-full bg-[#101510] border-b border-[#9cff93]/10 shadow-[0_4px_20px_rgba(156,255,147,0.05)]">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-full">
-<div class="text-2xl font-black text-[#9cff93] tracking-tighter italic font-headline">HIREHARD</div>
-<nav class="hidden md:flex items-center gap-8" aria-label="Primary">
-<a class="text-[#9cff93]/60 font-['Space_Grotesk'] uppercase tracking-[0.05em] text-xs font-bold hover:text-[#9cff93] hover:bg-[#9cff93]/5 transition-all duration-150 focus-visible:outline-offset-4" href="#manifest">MANIFEST</a>
-<a class="text-[#9cff93]/60 font-['Space_Grotesk'] uppercase tracking-[0.05em] text-xs font-bold hover:text-[#9cff93] hover:bg-[#9cff93]/5 transition-all duration-150 focus-visible:outline-offset-4" href="#intel">INTEL</a>
-<a class="text-[#9cff93]/60 font-['Space_Grotesk'] uppercase tracking-[0.05em] text-xs font-bold hover:text-[#9cff93] hover:bg-[#9cff93]/5 transition-all duration-150 focus-visible:outline-offset-4" href="#squad">SQUAD</a>
-<a class="text-[#9cff93]/60 font-['Space_Grotesk'] uppercase tracking-[0.05em] text-xs font-bold hover:text-[#9cff93] hover:bg-[#9cff93]/5 transition-all duration-150 focus-visible:outline-offset-4" href="#communications">COMMUNICATIONS</a>
+<div class="flex flex-wrap gap-y-3 gap-x-4 sm:gap-x-6 justify-between items-center w-full min-h-[4.25rem] px-4 sm:px-6 lg:px-8 py-3 max-w-[100vw]">
+<div class="shrink-0 text-xl sm:text-2xl font-black text-[#9cff93] tracking-tighter italic font-headline">HIREHARD</div>
+<nav class="hidden md:flex flex-wrap items-center justify-end gap-x-6 lg:gap-x-8 gap-y-1 min-w-0" aria-label="Primary">
+<a class="text-[#9cff93]/60 font-['Space_Grotesk'] uppercase tracking-[0.05em] text-xs font-bold hover:text-[#9cff93] hover:bg-[#9cff93]/5 transition-all duration-150 focus-visible:outline-offset-4 whitespace-nowrap" href="#manifest">MANIFEST</a>
+<a class="text-[#9cff93]/60 font-['Space_Grotesk'] uppercase tracking-[0.05em] text-xs font-bold hover:text-[#9cff93] hover:bg-[#9cff93]/5 transition-all duration-150 focus-visible:outline-offset-4 whitespace-nowrap" href="#intel">INTEL</a>
+<a class="text-[#9cff93]/60 font-['Space_Grotesk'] uppercase tracking-[0.05em] text-xs font-bold hover:text-[#9cff93] hover:bg-[#9cff93]/5 transition-all duration-150 focus-visible:outline-offset-4 whitespace-nowrap" href="#squad">SQUAD</a>
+<a class="text-[#9cff93]/60 font-['Space_Grotesk'] uppercase tracking-[0.05em] text-[10px] lg:text-xs font-bold hover:text-[#9cff93] hover:bg-[#9cff93]/5 transition-all duration-150 focus-visible:outline-offset-4 whitespace-nowrap" href="#communications">COMMUNICATIONS</a>
 </nav>
-<a href="#communications" class="inline-flex items-center bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-sm font-headline text-xs font-bold uppercase tracking-widest active:scale-95 duration-150 ease-in-out relative">
+<a href="#communications" class="shrink-0 inline-flex items-center bg-gradient-to-r from-primary to-primary-container text-on-primary px-4 sm:px-6 py-2 rounded-sm font-headline text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest active:scale-95 duration-150 ease-in-out relative whitespace-nowrap max-md:ml-auto">
                 JOIN THE PILOT
                 <span class="absolute -top-1 -left-1 w-2 h-2 border-t border-l border-primary" aria-hidden="true"></span>
 <span class="absolute -bottom-1 -right-1 w-2 h-2 border-b border-r border-primary" aria-hidden="true"></span>
 </a>
 </div>
 </header>
-<main id="main" class="relative pt-20">
+<main id="main" class="relative">
 <!-- Hero Section -->
-<section id="manifest" class="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden" aria-labelledby="hero-heading">
+<section id="manifest" class="relative box-border min-h-[100svh] flex flex-col items-center justify-center px-4 sm:px-6 pt-[4.75rem] pb-12 overflow-hidden sm:pb-16" aria-labelledby="hero-heading">
 <!-- Telemetry Flourishes -->
-<div class="absolute top-32 left-8 font-headline text-[10px] text-primary/40 uppercase tracking-[0.2em] hidden lg:block">
+<div class="absolute top-36 left-4 sm:left-8 font-headline text-[10px] text-primary/40 uppercase tracking-[0.2em] hidden lg:block pointer-events-none">
                 SYS_STATUS: ENGAGED<br>COORD: 40.7128° N, 74.0060° W
             </div>
-<div class="absolute bottom-32 right-8 font-headline text-[10px] text-primary/40 uppercase tracking-[0.2em] hidden lg:block text-right">
+<div class="absolute bottom-24 sm:bottom-32 right-4 sm:right-8 font-headline text-[10px] text-primary/40 uppercase tracking-[0.2em] hidden lg:block text-right pointer-events-none">
                 RECRUITMENT_OS_V4.2.0<br>ENCRYPTION: AES-256-GCM
             </div>
 <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
