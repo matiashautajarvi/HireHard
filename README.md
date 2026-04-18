@@ -1,6 +1,9 @@
 # HireHard — landing
 
-Static marketing page for HireHard (Tailwind via CDN). Deploy anywhere that serves static files.
+Static marketing page for HireHard (Tailwind via CDN).
+
+- **Repository:** [github.com/matiashautajarvi/HireHard](https://github.com/matiashautajarvi/HireHard)
+- **Production:** [hirehard.vercel.app](https://hirehard.vercel.app)
 
 ## Local preview
 
@@ -8,7 +11,6 @@ Open `index.html` in a browser, or run a static server from this folder (for exa
 
 ## Deploy on Vercel
 
-1. Push this repository to GitHub.
-2. In Vercel: **Add New Project** → import the repo.
-3. **Framework preset**: Other. Leave **Build Command** empty. **Output directory**: `.` (repository root).
-4. Deploy. After you have a production URL, update Open Graph / Twitter `meta` tags in `index.html` if you want correct share previews.
+This project is connected to Vercel; pushes to `main` trigger deployments. Settings: **Framework** Other, **Output directory** repository root (`.`).
+
+Open Graph and Twitter URLs in `index.html` use `https://hirehard.vercel.app/`; update them if you add a custom domain in Vercel.
